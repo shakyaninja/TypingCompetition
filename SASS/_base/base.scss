@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Staatliches&display=swap');
+#login{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner-box{
+        border-radius: 120px 10px 120px 10px;
+        -moz-border-radius: 120px 10px 120px 10px;
+        -webkit-border-radius: 120px 10px 120px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: wrap row;
+        width: 80vw;
+        height: 60vh;
+        padding: 5%;
+        background: rgb(37,107,129);
+        background: linear-gradient(159deg, rgba(37,107,129,1) 0%, rgba(8,15,17,1) 100%);
+        .title-typer{
+            font-family: 'Kanit', sans-serif;
+            font-size: 92px;
+            align-self: flex-start;
+            color: white ;
+        }
+        .form{
+            padding: 20px;
+            align-self: flex-end;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column wrap;
+            form{
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                #username{
+                    background: #ededed url('../../Assets/Components/profile-user.png') no-repeat 9px center;
+                    margin: 20px;
+                }
+                #password{
+                    margin: 20px;
+                    background: #ededed url('../../Assets/Components/padlock.png') no-repeat 9px center;
+                }
+                .submit{
+                    input{
+                        padding: 20px;
+                        background: #ededed url("../../Assets/Components/check.png") no-repeat center;
+                        &:focus {
+                            width: 20px;
+                            cursor: auto;
+                        }
+                    }
+                }
+                input {
+                    width: 32px;
+                    height: 32px;
+                    color: transparent;
+                    cursor: pointer;
+                    border: solid 1px #ccc;
+                    padding: 10px;
+                    -webkit-border-radius: 10em;
+                    -moz-border-radius: 10em;
+                    border-radius: 10em;
+                    
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    transition: all .5s;
+                }
+                input:hover {
+                    background-color: #fff;
+                }
+                input:focus {
+                    width: 130px;
+                    padding-left: 50px;
+                    color: #000;
+                    background-color: #fff;
+                    cursor: auto;
+                }
+                input:-moz-placeholder {
+                    color: transparent;
+                }
+                input::-webkit-input-placeholder {
+                    color: transparent;
+                }
+            }
+            span{
+                font-size: 12px;
+                margin-top: 20px;
+                a{
+                    color: teal;
+                    text-decoration: none;
+                    &:hover{
+                        color: turquoise;
+                    }
+                }
+            }
+        }
+    }
+}
+#mainSec{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: azure;
+    display: flex;
+    flex-flow: column wrap;
+    .navbar{
+        background: rgb(37,107,129);
+        background: linear-gradient(159deg, rgba(37,107,129,1) 0%, rgba(8,15,17,1) 100%);
+        a{
+            color: white;
+            &:hover{
+                color: #ededed;
+            }
+        }
+    }
+    #banner{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        .clipper{
+            height: 80vh;
+            width: auto;
+        }
+    }
+    #radialMenu{
+        background: url("../../Assets/Components/unselected.png") no-repeat ;
+        background-size: contain;
+        height: 80vh;
+        width: 80vw;  
+        align-self: center;  
+        .sel{
+            width: 0;
+            height: 0;
+            border-left: 54px solid transparent;
+            border-right: 70px solid transparent;
+            border-bottom: 131px solid transparent;
+        }
+        #sel1{
+            position: fixed;
+            top: 35%;
+            left: 34%;
+            transform: rotate(115deg);
+        }
+        #sel2{
+            position: fixed;
+            top: 27%;
+            left: 37%;
+            transform: rotate(160deg);
+        }
+        #sel3{
+            position: fixed;
+            top: 27%;
+            left: 42%;
+            transform: rotate(205deg);
+        }
+        #sel4{
+            position: fixed;
+            top: 33%;
+            left: 46%;
+            transform: rotate(251deg);
+        }
+        #sel5{
+            position: fixed;
+            top: 42%;
+            left: 46%;
+            transform: rotate(-60deg);          
+        }
+        #sel6{
+            position: fixed;
+            top: 50%;
+            left: 43%;
+            transform: rotate(-17deg);
+        }
+        #sel7{
+            position: fixed;
+            top: 51%;
+            left: 37.5%;
+            transform: rotate(29deg);
+        }
+        #sel8{
+            position: fixed;
+            top: 44%;
+            left: 34%;
+            transform: rotate(71deg);
+        }
+    }
+    
+}
+#register{
+    margin: -15px;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner-box{
+        margin:5% 0%;
+        border-radius: 120px 10px 120px 10px;
+        -moz-border-radius: 120px 10px 120px 10px;
+        -webkit-border-radius: 120px 10px 120px 10px;
+        width: 80vw;
+        height: auto;
+        padding: 2% 10% 5% 5%;
+        background: rgb(37,107,129);
+        background: linear-gradient(159deg, rgba(37,107,129,1) 0%, rgba(8,15,17,1) 100%);
+        .title-typer{
+            font-family: 'Kanit', sans-serif;
+            font-size: 92px;
+            align-self: flex-start;
+            color: white ;
+            margin-bottom: 5%;
+        }
+    }
+}

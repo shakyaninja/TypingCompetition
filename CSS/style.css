@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Staatliches&display=swap");
+#login {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .inner-box {
+  border-radius: 120px 10px 120px 10px;
+  -moz-border-radius: 120px 10px 120px 10px;
+  -webkit-border-radius: 120px 10px 120px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  width: 80vw;
+  height: 60vh;
+  padding: 5%;
+  background: #256b81;
+  background: linear-gradient(159deg, #256b81 0%, #080f11 100%);
+}
+#login .inner-box .title-typer {
+  font-family: "Kanit", sans-serif;
+  font-size: 92px;
+  align-self: flex-start;
+  color: white;
+}
+#login .inner-box .form {
+  padding: 20px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+#login .inner-box .form form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#login .inner-box .form form #username {
+  background: #ededed url("../../Assets/Components/profile-user.png") no-repeat 9px center;
+  margin: 20px;
+}
+#login .inner-box .form form #password {
+  margin: 20px;
+  background: #ededed url("../../Assets/Components/padlock.png") no-repeat 9px center;
+}
+#login .inner-box .form form .submit input {
+  padding: 20px;
+  background: #ededed url("../../Assets/Components/check.png") no-repeat center;
+}
+#login .inner-box .form form .submit input:focus {
+  width: 20px;
+  cursor: auto;
+}
+#login .inner-box .form form input {
+  width: 32px;
+  height: 32px;
+  color: transparent;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  padding: 10px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#login .inner-box .form form input:hover {
+  background-color: #fff;
+}
+#login .inner-box .form form input:focus {
+  width: 130px;
+  padding-left: 50px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+#login .inner-box .form form input:-moz-placeholder {
+  color: transparent;
+}
+#login .inner-box .form form input::-webkit-input-placeholder {
+  color: transparent;
+}
+#login .inner-box .form span {
+  font-size: 12px;
+  margin-top: 20px;
+}
+#login .inner-box .form span a {
+  color: teal;
+  text-decoration: none;
+}
+#login .inner-box .form span a:hover {
+  color: turquoise;
+}
+
+#mainSec {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: azure;
+  display: flex;
+  flex-flow: column wrap;
+}
+#mainSec .navbar {
+  background: #256b81;
+  background: linear-gradient(159deg, #256b81 0%, #080f11 100%);
+}
+#mainSec .navbar a {
+  color: white;
+}
+#mainSec .navbar a:hover {
+  color: #ededed;
+}
+#mainSec #banner {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+#mainSec #banner .clipper {
+  height: 80vh;
+  width: auto;
+}
+#mainSec #radialMenu {
+  background: url("../../Assets/Components/unselected.png") no-repeat;
+  background-size: contain;
+  height: 80vh;
+  width: 80vw;
+  align-self: center;
+}
+#mainSec #radialMenu .sel {
+  width: 0;
+  height: 0;
+  border-left: 54px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 131px solid transparent;
+}
+#mainSec #radialMenu #sel1 {
+  position: fixed;
+  top: 35%;
+  left: 34%;
+  transform: rotate(115deg);
+}
+#mainSec #radialMenu #sel2 {
+  position: fixed;
+  top: 27%;
+  left: 37%;
+  transform: rotate(160deg);
+}
+#mainSec #radialMenu #sel3 {
+  position: fixed;
+  top: 27%;
+  left: 42%;
+  transform: rotate(205deg);
+}
+#mainSec #radialMenu #sel4 {
+  position: fixed;
+  top: 33%;
+  left: 46%;
+  transform: rotate(251deg);
+}
+#mainSec #radialMenu #sel5 {
+  position: fixed;
+  top: 42%;
+  left: 46%;
+  transform: rotate(-60deg);
+}
+#mainSec #radialMenu #sel6 {
+  position: fixed;
+  top: 50%;
+  left: 43%;
+  transform: rotate(-17deg);
+}
+#mainSec #radialMenu #sel7 {
+  position: fixed;
+  top: 51%;
+  left: 37.5%;
+  transform: rotate(29deg);
+}
+#mainSec #radialMenu #sel8 {
+  position: fixed;
+  top: 44%;
+  left: 34%;
+  transform: rotate(71deg);
+}
+
+#register {
+  margin: -15px;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#register .inner-box {
+  margin: 5% 0%;
+  border-radius: 120px 10px 120px 10px;
+  -moz-border-radius: 120px 10px 120px 10px;
+  -webkit-border-radius: 120px 10px 120px 10px;
+  width: 80vw;
+  height: auto;
+  padding: 2% 10% 5% 5%;
+  background: #256b81;
+  background: linear-gradient(159deg, #256b81 0%, #080f11 100%);
+}
+#register .inner-box .title-typer {
+  font-family: "Kanit", sans-serif;
+  font-size: 92px;
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
